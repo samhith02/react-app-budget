@@ -1,0 +1,36 @@
+.alert
+{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text
+{
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.displayMoney
+{
+    transition: .5s ease;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.alert:hover .displayMoney
+{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.alert:hover .text
+{
+    opacity: 0;
+}
